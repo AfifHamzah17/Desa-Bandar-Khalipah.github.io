@@ -1,0 +1,53 @@
+/* History.css */
+
+/* Container styling to match the global .container settings */
+.info {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1170px; /* Max width for large screens */
+  }
+  
+  /* Ensure text is justified and responsive */
+  .info h1 {
+    font-size: 28px;
+    color: #5d5d5d;
+  }
+  
+  .info p {
+    margin: 0;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #5d5d5d;
+    text-align: justify; /* Justify the text */
+  }
+  
+  /* Responsive table styles */
+  .table-container {
+    width: 100%; /* Ensure container takes full width */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    margin-top: 20px;
+  }
+  
+  table {
+    width: 100%; /* Ensure table takes full width of its container */
+    border-collapse: collapse; /* Ensure borders are collapsed */
+  }
+  
+  thead {
+    background-color: #f0f0f0; /* Light gray background for header */
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd; /* Light gray border */
+  }
+  
+  @media (max-width: 767px) {
+    th, td {
+      padding: 8px; /* Adjust padding for smaller screens */
+    }
+  }
+  

@@ -1,0 +1,47 @@
+/* src/components/SliderComponent.css */
+
+.swiper-container {
+  position: relative;
+  width: 70%;
+  height: 400px; /* Adjust height as needed */
+  padding-top: 20px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  background: #eee; /* Background color for slides */
+}
+
+.swiper-slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensures the entire image is visible without cropping on desktop */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000; /* Customize arrow color */
+}
+
+.swiper-pagination-bullet {
+  background: #000; /* Customize pagination bullet color */
+}
+
+@media (max-width: 767px) {
+  .swiper-container {
+    width: 100%; /* Full width on small screens */
+    height: 300px; /* Reduce height on smaller screens */
+  }
+
+  .swiper-slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Crops the image on mobile */
+  }
+}
+
+
+
